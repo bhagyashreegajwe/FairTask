@@ -1,0 +1,12 @@
+<h3 class="fairHeading p-3">FairTask</h3>
+<div class="row">
+    <div class="col-md-4">
+        <app-fairs-cards 
+        (getCardDetailsId)="onCardClick($event)"
+        [getFairCard]="fair" 
+        *ngFor="let fair of getFairCards"></app-fairs-cards>
+    </div>
+    <div class="col-md-8">
+        <app-fairs-details [getSelectedCard]="selectedFair"></app-fairs-details>
+    </div>
+</div>

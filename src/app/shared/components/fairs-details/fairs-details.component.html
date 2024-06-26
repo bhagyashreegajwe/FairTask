@@ -1,0 +1,17 @@
+<div class="fairContent m-4">
+    <div class="banner">
+        <img [src]="getSelectedCard.bannerUrl" [title]="getSelectedCard.fairName" 
+            [alt]="getSelectedCard.fairName"
+        >
+
+        <div class="banner-content">
+            <h5>{{getSelectedCard.fairName}}</h5>
+            <p class="m-0">Fair Type : {{getSelectedCard.type}}</p>
+            <p class="m-0">Fair Date : {{getSelectedCard.startDate | date}}</p>
+        </div>
+    </div>
+</div>
+<div class="m-4 pt-4">
+    <p *ngIf='getSelectedCard.candidateDescription' [innerHTML]="getSelectedCard.candidateDescription"></p>
+    <p *ngIf='getSelectedCard.schoolDescription' [innerHTML]="getSelectedCard.schoolDescription"></p>
+</div>

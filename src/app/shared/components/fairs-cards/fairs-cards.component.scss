@@ -1,0 +1,16 @@
+.card{
+    cursor: pointer;
+    .card-body{
+        background-image: linear-gradient(90deg, #41bb90, #09f7a3);
+    
+        h5{
+            color:#fff;
+        }
+    
+        .content{
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    }
+}
